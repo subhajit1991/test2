@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="51.955" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="55.047" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="JOB_NAME" value="Maven-Jenkins"/>
+    <property name="JOB_NAME" value="test1git"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="NUMBER_OF_PROCESSORS" value="4"/>
     <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
@@ -27,10 +27,10 @@
     <property name="ProgramFiles" value="C:\Program Files (x86)"/>
     <property name="PROMPT" value="$P$G"/>
     <property name="user.language" value="en"/>
-    <property name="JOB_BASE_NAME" value="Maven-Jenkins"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/Maven-Jenkins/326/display/redirect?page=changes"/>
+    <property name="JOB_BASE_NAME" value="test1git"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/test1git/8/display/redirect?page=changes"/>
     <property name="M2" value="C:\Program Files\Apache Software Foundation\apache-maven-3.5.3\bin"/>
-    <property name="BUILD_DISPLAY_NAME" value="#326"/>
+    <property name="BUILD_DISPLAY_NAME" value="#8"/>
     <property name="OneDrive" value="C:\Users\SUBROY\OneDrive"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin"/>
     <property name="LOCALAPPDATA" value="C:\Users\SUBROY\AppData\Local"/>
@@ -42,7 +42,7 @@
     <property name="NODE_NAME" value="master"/>
     <property name="PROCESSOR_ARCHITEW6432" value="AMD64"/>
     <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_144\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="326"/>
+    <property name="BUILD_ID" value="8"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -58,13 +58,14 @@
     <property name="java.home" value="C:\Program Files (x86)\Java\jdk1.8.0_144\jre"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="os.version" value="10.0"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/Maven-Jenkins/326/display/redirect"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/test1git/8/display/redirect"/>
     <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
     <property name="TMP" value="C:\Users\SUBROY\AppData\Local\Temp"/>
     <property name="path.separator" value=";"/>
     <property name="java.vm.version" value="25.144-b01"/>
     <property name="user.variant" value=""/>
-    <property name="JOB_DISPLAY_URL" value="http://localhost:8080/job/Maven-Jenkins/display/redirect"/>
+    <property name="GIT_PREVIOUS_COMMIT" value="c6b3262113eef9f5d88d3bc36fb092f3190729ce"/>
+    <property name="JOB_DISPLAY_URL" value="http://localhost:8080/job/test1git/display/redirect"/>
     <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
     <property name="USERDOMAIN_ROAMINGPROFILE" value="NTNET"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
@@ -81,7 +82,7 @@
     <property name="POM_GROUPID" value="test1"/>
     <property name="user.home" value="C:\Users\SUBROY"/>
     <property name="PUBLIC" value="C:\Users\Public"/>
-    <property name="BUILD_TAG" value="jenkins-Maven-Jenkins-326"/>
+    <property name="BUILD_TAG" value="jenkins-test1git-8"/>
     <property name="JENKINS_SERVER_COOKIE" value="3c86cd5a9b6e3961"/>
     <property name="HUDSON_URL" value="http://localhost:8080/"/>
     <property name="ProgramData" value="C:\ProgramData"/>
@@ -95,7 +96,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="maven.home" value="C:\Program Files\Apache Software Foundation\apache-maven-3.5.3"/>
     <property name="java.class.path" value="C:\Users\SUBROY\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.12-alpha-1.jar;C:\Program Files\Apache Software Foundation\apache-maven-3.5.3\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\Apache Software Foundation\apache-maven-3.5.3/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Program Files\Apache Software Foundation\apache-maven-3.5.3 C:\Users\SUBROY\.jenkins\war\WEB-INF\lib\remoting-3.27.jar C:\Users\SUBROY\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar C:\Users\SUBROY\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar 64864"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Program Files\Apache Software Foundation\apache-maven-3.5.3 C:\Users\SUBROY\.jenkins\war\WEB-INF\lib\remoting-3.27.jar C:\Users\SUBROY\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar C:\Users\SUBROY\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar 57048"/>
     <property name="Path" value="C:\Program Files (x86)\Java\jdk1.8.0_144/bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;JAVA_HOME\bin;C:\Users\SUBROY\Downloads\SeleniumGecko;C:\Users\SUBROY\Downloads\Chrome;C:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Program Files (x86)\Java\jre1.8.0_144\bin;%M2_HOME%\bin;C:\Users\SUBROY\AppData\Local\Programs\Python\Python36;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;C:\Users\SUBROY\Downloads\IE"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="PROCESSOR_ARCHITECTURE" value="x86"/>
@@ -111,33 +112,36 @@
     <property name="HUDSON_HOME" value="C:\Users\SUBROY\.jenkins"/>
     <property name="PATH+MAVEN" value="C:\Program Files\Apache Software Foundation\apache-maven-3.5.3/bin"/>
     <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
-    <property name="BUILD_URL" value="http://localhost:8080/job/Maven-Jenkins/326/"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/test1git/8/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="os.arch" value="x86"/>
     <property name="SystemRoot" value="C:\WINDOWS"/>
     <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_144\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
     <property name="user.dir" value="C:\Users\SUBROY\eclipse-workspace\test1"/>
-    <property name="JOB_URL" value="http://localhost:8080/job/Maven-Jenkins/"/>
-    <property name="LOGONSERVER" value="\\DVCIDC1"/>
+    <property name="JOB_URL" value="http://localhost:8080/job/test1git/"/>
+    <property name="LOGONSERVER" value="\\DVCIDC3"/>
     <property name="USERDOMAIN" value="NTNET"/>
     <property name="line.separator" value="&#10;"/>
     <property name="MAVEN_HOME" value="C:\Program Files\Apache Software Foundation\apache-maven-3.5.3"/>
     <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
-    <property name="BUILD_NUMBER" value="326"/>
+    <property name="BUILD_NUMBER" value="8"/>
     <property name="JENKINS_URL" value="http://localhost:8080/"/>
     <property name="PROCESSOR_REVISION" value="5e03"/>
+    <property name="GIT_BRANCH" value="origin/master"/>
     <property name="UATDATA" value="C:\WINDOWS\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77"/>
     <property name="ProgramW6432" value="C:\Program Files"/>
     <property name="windir" value="C:\WINDOWS"/>
+    <property name="GIT_COMMIT" value="c6b3262113eef9f5d88d3bc36fb092f3190729ce"/>
     <property name="=C:" value="C:\Users\SUBROY\Documents"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="SystemDrive" value="C:"/>
     <property name="maven3.interceptor" value="C:\Users\SUBROY\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar"/>
-    <property name="WORKSPACE" value="C:\Users\SUBROY\.jenkins\workspace\Maven-Jenkins"/>
+    <property name="WORKSPACE" value="C:\Users\SUBROY\.jenkins\workspace\test1git"/>
     <property name="maven3.interceptor.common" value="C:\Users\SUBROY\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="PSModulePath" value="C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Microsoft Azure Information Protection\Powershell"/>
+    <property name="GIT_URL" value="https://github.com/subhajit1991/test1.git"/>
   </properties>
-  <testcase name="testEasy" classname="example.NewTest" time="39.5"/>
+  <testcase name="testEasy" classname="example.NewTest" time="42.051"/>
 </testsuite>
