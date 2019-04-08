@@ -8,7 +8,7 @@ import java.util.Properties;
 public class DataProvider {
 	
 	private Properties properties;
-	private final String propertyFilePath= "C:\\Users\\SUBROY\\eclipse-workspace\\test1\\Naukri.properties";
+	private final String propertyFilePath= "C:\\Users\\SR068695\\git\\test2\\Naukri.properties";
 
 	
 	public DataProvider(){
@@ -31,7 +31,7 @@ public class DataProvider {
 	public String getDriverPath(){
 		String driverPath = properties.getProperty("driverPath");
 		if(driverPath!= null) return driverPath;
-		else throw new RuntimeException("driverPath not specified in the Configuration.properties file.");		
+		else throw new RuntimeException("driverPath not specified in the Naukri.properties file.");		
 	}
 /*
 	public long getImplicitlyWait() {		
@@ -44,7 +44,7 @@ public class DataProvider {
 	public String getApplicationUrl() {
 		String url = properties.getProperty("url");
 		if(url != null) return url;
-		else throw new RuntimeException("url not specified in the Configuration.properties file.");
+		else throw new RuntimeException("url not specified in the Naukri.properties file.");
 	}
 	
 	public String getExcelName(){

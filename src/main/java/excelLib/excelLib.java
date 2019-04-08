@@ -22,7 +22,7 @@ public class excelLib {
 		
 		 //Create an object of File class to open xlsx file
 
-	    File file =    new File("C:\\Users\\SUBROY\\Documents\\Naukri Login.xlsx");
+	    File file =    new File("C:\\Users\\SR068695\\test2\\Naukri Login.xlsx");
 	    
 	  //Create an object of FileInputStream class to read excel file
 

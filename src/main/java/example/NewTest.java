@@ -7,7 +7,7 @@ import excelLib.excelLib;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
-import utility.Log;
+//import utility.Log;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -31,44 +31,59 @@ public class NewTest {
 	 private WebDriver driver=null;
 	 private List<String> temp=new ArrayList<String>();
 	 DataProvider DataProvider;
+	 
+	  @BeforeTest
+	  public void beforeTest() throws IOException {
+		   
+		   ChromeOptions options = new ChromeOptions();
+		   options.setExperimentalOption("useAutomationExtension", false);
+		   options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));    
+		   
+		   
+		   	DataProvider dp = new DataProvider();
+		   	System.out.println(dp);
+		 	System.setProperty("webdriver.chrome.driver",dp.getDriverPath());//"C:\\Users\\SR068695\\Downloads\\chromedriver.exe");//dp.getDriverPath());
+		 	//Log.info("DriverPath is found successfully");
+		 	driver = new ChromeDriver(options);
+		 	driver.manage().deleteAllCookies();
+	  
+			//String baseUrl = "https://login.naukri.com/nLogin/Login.php";
+			String baseUrl = dp.getApplicationUrl();
+			//Log.info("URL is successfully fetched");
+		    //String baseUrl1 = "https://www.naukri.com/nlogin/login";
+			//if (baseUrl == "https://login.naukri.com/nLogin/Login.php");
+					driver.get(baseUrl);
+					//Log.info("Browser is successfully launched");
+
+		    driver.manage().window().maximize();
+		    //WebDriverWait myWaitVar= new WebDriverWait(driver, 10);
+		    
+		    
+		    driver.manage().timeouts().implicitlyWait(50L, TimeUnit.SECONDS);
+		    //Log.info("Implicit wait is triggered");
+		    
+		    try {
+					Thread.sleep(5000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+				}
+		    
+		    String filePath=dp.getExcelPath();
+		    String fileName=dp.getExcelName();
+		    String sheetName=dp.getSheetName();
+		    temp = excelLib.readExcel(filePath, fileName, sheetName);
+	  }
+	  
+	 
 	 @Test
 
 	  public void testEasy() throws InterruptedException, IOException {	
 			//driver.get("http://demo.guru99.com/test/guru99home/");  
 			//String title = driver.getTitle();				 
 			//Assert.assertTrue(title.contains("Demo Guru99 Page"));
-		 DataProvider dp = new DataProvider();
-	 System.setProperty("webdriver.chrome.driver",dp.getDriverPath());
-	 Log.info("DriverPath is found successfully");
-	  driver.manage().deleteAllCookies();
+		 	
 	  
-	//String baseUrl = "https://login.naukri.com/nLogin/Login.php";
-	String baseUrl = dp.getApplicationUrl();
-	Log.info("URL is successfully fetched");
-    //String baseUrl1 = "https://www.naukri.com/nlogin/login";
-	//if (baseUrl == "https://login.naukri.com/nLogin/Login.php");
-			driver.get(baseUrl);
-			Log.info("Browser is successfully launched");
-
-    driver.manage().window().maximize();
-    //WebDriverWait myWaitVar= new WebDriverWait(driver, 10);
     
-    
-    driver.manage().timeouts().implicitlyWait(50L, TimeUnit.SECONDS);
-    Log.info("Implicit wait is triggered");
-    
-    try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-		}
-    
-    String filePath=dp.getExcelPath();
-    String fileName=dp.getExcelName();
-    String sheetName=dp.getSheetName();
-	
-	  
-      temp = excelLib.readExcel(filePath, fileName, sheetName);
      // String username=temp.get(0);
       driver.findElement(By.id("usernameField")).sendKeys(temp.get(0));
       //WebElement username1= driver.findElement(By.id("usernameField"));
@@ -106,9 +121,9 @@ public class NewTest {
       
       WebElement Headline= driver.findElement(By.id("resumeHeadlineTxt"));
       Headline.clear();
-      Headline.sendKeys("MCA, Currently Automation Test Engineer, Serving Notice Period, LWD - 22nd Feb 2019");
+      Headline.sendKeys("MCA, Currently Automation Test Engineer");
       
-      driver.findElement(By.xpath("//button[contains(.,'Save')]")).click();
+      driver.findElement(By.xpath("//button[contains(@type,'submit')] [@class='waves-effect waves-light btn-large blue-btn'] [contains(text(),'Save')]")).click();
       
       //driver.findElement(By.xpath("//a[contains (@href,'https://login.naukri.com/nLogin/Logout.php')]")).click();
       driver.navigate().refresh();
@@ -161,18 +176,7 @@ public class NewTest {
 		}
 		*/
   }
-  
-  @BeforeTest
-  public void beforeTest() {
-	   
-	   //Assert.assertEquals("anc", "abhj");
-		    //driver = new ChromeDriver();
-	   ChromeOptions options = new ChromeOptions();
-	   options.setExperimentalOption("useAutomationExtension", false);
-	   options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));    
-	   driver = new ChromeDriver(options);
-  }
-  
+
 
   @AfterTest
   public void afterTest() throws IOException, InterruptedException {
