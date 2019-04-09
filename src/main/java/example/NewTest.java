@@ -13,7 +13,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.By;		
+import org.openqa.selenium.By;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -38,7 +39,14 @@ public class NewTest {
 		   ChromeOptions options = new ChromeOptions();
 		   options.setExperimentalOption("useAutomationExtension", false);
 		   options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));    
-		   
+		   //options.addArguments("enable-automation");
+		   //options.addArguments("--headless");
+		   //options.addArguments("--window-size=1366,768");
+		   options.addArguments("--no-sandbox");
+		   options.addArguments("--disable-extensions");
+		   options.addArguments("--dns-prefetch-disable");
+		   //options.addArguments("--disable-gpu");
+		   options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 		   
 		   	DataProvider dp = new DataProvider();
 		   	System.out.println(dp);
@@ -189,7 +197,7 @@ public class NewTest {
       driver.close();
 	  //driver.quit();
       
-      String filePath="C:\\Users\\SUBROY\\Documents\\Naukri Login.xlsx";
+      String filePath="C:\\Users\\SR068695\\test2\\Naukri Login.xlsx";
       String fileName="Naukri Login.xlsx";
       String sheet="Login";
       String arr[]={"Status","Successfully Completed"};
