@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="54727" started-at="2019-04-09T07:40:27Z" finished-at="2019-04-09T07:41:22Z">
+  <suite name="Suite" duration-ms="102299" started-at="2019-08-04T07:22:28Z" finished-at="2019-08-04T07:24:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="54727" started-at="2019-04-09T07:40:27Z" finished-at="2019-04-09T07:41:22Z">
+    <test name="Test" duration-ms="102299" started-at="2019-08-04T07:22:28Z" finished-at="2019-08-04T07:24:10Z">
       <class name="example.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@d8355a8]" name="beforeTest" is-config="true" duration-ms="20540" started-at="2019-04-09T13:10:27Z" finished-at="2019-04-09T13:10:48Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@d8355a8]" name="beforeTest" is-config="true" duration-ms="19894" started-at="2019-08-04T12:52:28Z" finished-at="2019-08-04T12:52:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.NewTest@d8355a8]" name="testEasy" duration-ms="27842" started-at="2019-04-09T13:10:48Z" finished-at="2019-04-09T13:11:16Z">
+        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.NewTest@d8355a8]" name="testEasy" duration-ms="74313" started-at="2019-08-04T12:52:48Z" finished-at="2019-08-04T12:54:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEasy -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@d8355a8]" name="afterTest" is-config="true" duration-ms="6316" started-at="2019-04-09T13:11:16Z" finished-at="2019-04-09T13:11:22Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@d8355a8]" name="afterTest" is-config="true" duration-ms="8053" started-at="2019-08-04T12:54:02Z" finished-at="2019-08-04T12:54:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- example.NewTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -3,3 +3,7 @@
 [0116/162017.296:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
 [0116/162017.302:ERROR:exception_snapshot_win.cc(88)] thread ID 690036 not found in process
 [0409/132029.601:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0412/124723.453:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0418/141527.400:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0418/141722.471:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0418/141959.147:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
