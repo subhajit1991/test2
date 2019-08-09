@@ -94,11 +94,7 @@ public class NewTest {
 	@Test
 
 	public void testEasy() throws InterruptedException, IOException {	
-		//driver.get("http://demo.guru99.com/test/guru99home/");  
 		//String title = driver.getTitle();				 
-		//Assert.assertTrue(title.contains("Demo Guru99 Page"));
-
-
 
 		// String username=temp.get(0);
 		driver.findElement(By.id("usernameField")).sendKeys(temp.get(0));
@@ -111,7 +107,6 @@ public class NewTest {
 		// WebElement password= driver.findElement(By.id("passwordField"));
 		// password.sendKeys("Subho1991*");
 
-		//driver.findElement(By.xpath("//input[@value='Login']")).click();
 		driver.findElement(By.xpath("//button[contains(text(), 'Login')]")).click();
 		//driver.findElement(By.partialLinkText("Login")).click();
 
@@ -136,19 +131,12 @@ public class NewTest {
 //				} catch (InterruptedException x) {
 //					// TODO Auto-generated catch block
 //				}
-//
 //				driver.manage().timeouts().implicitlyWait(50L, TimeUnit.SECONDS);
-//
-//				try {
-//					Thread.sleep(5000);
-//				} catch (InterruptedException ex) {
-//					// TODO Auto-generated catch block
-//				}
 
 				driver.findElement(By.xpath("//div[@class='user-name roboto-bold-text'][contains(text(),'Subhajit Roy')]")).click();
 				
-				JavascriptExecutor jsx = (JavascriptExecutor)driver;
-				jsx.executeScript("window.scrollBy(0,500)", "");
+//				JavascriptExecutor jsx = (JavascriptExecutor)driver;
+//				jsx.executeScript("window.scrollBy(0,250)", "");
 
 				WebElement ResumeHeadline = driver.findElement(By.xpath("//span[contains(@class,'widgetTitle')][contains(text(),'Resume Headline')]"));
 				WebElement EditResume = ResumeHeadline.findElement(By.xpath("//span[contains(@class,'edit icon')]  [contains(text(),'Edit')]"));
