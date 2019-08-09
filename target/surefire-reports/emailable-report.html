@@ -31,58 +31,39 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">77.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">130.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">example.NewTest</td><td><a href="#m1"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1564739473164</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">example.NewTest</td><td><a href="#m1"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1565326678999</td><td class="numi">0</td></tr>
 <tr><th colspan="4">Test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">example.NewTest</td><td><a href="#m2"><b>testEasy</b>  </a></td><td class="numi">1</td><td>1564739417288</td><td class="numi">55845</td></tr>
+<tr class="failedodd"><td rowspan="1">example.NewTest</td><td><a href="#m2"><b>testEasy</b>  </a></td><td class="numi">1</td><td>1565326571712</td><td class="numi">107273</td></tr>
 </table>
 <h1>Test</h1>
 <h2 id="m1">example.NewTest:afterTest</h2>
 <div style="padding-left:3em">
-<p>expected [Naukri India | Logout] but found [Home | Mynaukri]</p>
+<p>expected [Naukri India | Logout] but found [Profile | Mynaukri]</p>
 org.testng.Assert.fail(Assert.java:94)
 <br/>at org.testng.Assert.failNotEquals(Assert.java:494)
 <br/>at org.testng.Assert.assertEquals(Assert.java:123)
 <br/>at org.testng.Assert.assertEquals(Assert.java:176)
 <br/>at org.testng.Assert.assertEquals(Assert.java:186)
-<br/>at example.NewTest.afterTest(NewTest.java:195)
+<br/>at example.NewTest.afterTest(NewTest.java:226)
 <br/>26 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m2">example.NewTest:testEasy</h2>
 <div style="padding-left:3em">
-<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains (@href,&apos;https://my.naukri.com/Profile/view?id=&amp;orgn=homepage&apos;)]&quot;}
-  (Session info: chrome=75.0.3770.142)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<p>Expected condition failed: waiting for invisibility of [[[[ChromeDriver: chrome on XP (1cfe2ed83fd0fcd222f70cb585486945)] -&gt; xpath: //span[contains(@class,&apos;widgetTitle&apos;)][contains(text(),&apos;Resume Headline&apos;)]]] -&gt; xpath: //span[contains(@class,&apos;edit icon&apos;)]  [contains(text(),&apos;Edit&apos;)]] (tried for 50 second(s) with 500 MILLISECONDS interval)
 Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
-System info: host: &apos;W1650977&apos;, ip: &apos;10.182.212.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+System info: host: &apos;W1650977&apos;, ip: &apos;10.182.208.72&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56891}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
-Session ID: 97cc4c384c30232190b8499751f5a2fe
-*** Element info: {Using=xpath, value=//a[contains (@href,&apos;https://my.naukri.com/Profile/view?id=&amp;orgn=homepage&apos;)]}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-<br/>at example.NewTest.testEasy(NewTest.java:118)
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56765}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
+Session ID: 1cfe2ed83fd0fcd222f70cb585486945</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+<br/>at example.NewTest.testEasy(NewTest.java:157)
 <br/>28 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>

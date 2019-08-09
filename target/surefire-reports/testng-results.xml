@@ -2,59 +2,35 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="77379" started-at="2019-08-02T09:50:00Z" finished-at="2019-08-02T09:51:18Z">
+  <suite name="Suite" duration-ms="130543" started-at="2019-08-09T04:55:53Z" finished-at="2019-08-09T04:58:04Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="77379" started-at="2019-08-02T09:50:00Z" finished-at="2019-08-02T09:51:18Z">
+    <test name="Test" duration-ms="130543" started-at="2019-08-09T04:55:53Z" finished-at="2019-08-09T04:58:04Z">
       <class name="example.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@1a6e353]" name="beforeTest" is-config="true" duration-ms="16459" started-at="2019-08-02T15:20:00Z" finished-at="2019-08-02T15:20:17Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@1a6e353]" name="beforeTest" is-config="true" duration-ms="18187" started-at="2019-08-09T10:25:53Z" finished-at="2019-08-09T10:26:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="testEasy()[pri:0, instance:example.NewTest@1a6e353]" name="testEasy" duration-ms="55845" started-at="2019-08-02T15:20:17Z" finished-at="2019-08-02T15:21:13Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="testEasy()[pri:0, instance:example.NewTest@1a6e353]" name="testEasy" duration-ms="107273" started-at="2019-08-09T10:26:11Z" finished-at="2019-08-09T10:27:58Z">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains (@href,'https://my.naukri.com/Profile/view?id=&orgn=homepage')]"}
-  (Session info: chrome=75.0.3770.142)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Expected condition failed: waiting for invisibility of [[[[ChromeDriver: chrome on XP (1cfe2ed83fd0fcd222f70cb585486945)] -> xpath: //span[contains(@class,'widgetTitle')][contains(text(),'Resume Headline')]]] -> xpath: //span[contains(@class,'edit icon')]  [contains(text(),'Edit')]] (tried for 50 second(s) with 500 MILLISECONDS interval)
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'W1650977', ip: '10.182.212.44', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_144'
+System info: host: 'W1650977', ip: '10.182.208.72', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56891}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
-Session ID: 97cc4c384c30232190b8499751f5a2fe
-*** Element info: {Using=xpath, value=//a[contains (@href,'https://my.naukri.com/Profile/view?id=&orgn=homepage')]}]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56765}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
+Session ID: 1cfe2ed83fd0fcd222f70cb585486945]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains (@href,'https://my.naukri.com/Profile/view?id=&orgn=homepage')]"}
-  (Session info: chrome=75.0.3770.142)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for invisibility of [[[[ChromeDriver: chrome on XP (1cfe2ed83fd0fcd222f70cb585486945)] -> xpath: //span[contains(@class,'widgetTitle')][contains(text(),'Resume Headline')]]] -> xpath: //span[contains(@class,'edit icon')]  [contains(text(),'Edit')]] (tried for 50 second(s) with 500 MILLISECONDS interval)
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'W1650977', ip: '10.182.212.44', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_144'
+System info: host: 'W1650977', ip: '10.182.208.72', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56891}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
-Session ID: 97cc4c384c30232190b8499751f5a2fe
-*** Element info: {Using=xpath, value=//a[contains (@href,'https://my.naukri.com/Profile/view?id=&orgn=homepage')]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at example.NewTest.testEasy(NewTest.java:118)
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56765}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
+Session ID: 1cfe2ed83fd0fcd222f70cb585486945
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at example.NewTest.testEasy(NewTest.java:157)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -84,23 +60,23 @@ Session ID: 97cc4c384c30232190b8499751f5a2fe
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEasy -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:example.NewTest@1a6e353]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-08-02T15:21:13Z" finished-at="2019-08-02T15:21:13Z">
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:example.NewTest@1a6e353]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-08-09T10:27:58Z" finished-at="2019-08-09T10:27:58Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Naukri India | Logout] but found [Home | Mynaukri]]]>
+              <![CDATA[expected [Naukri India | Logout] but found [Profile | Mynaukri]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Naukri India | Logout] but found [Home | Mynaukri]
+              <![CDATA[java.lang.AssertionError: expected [Naukri India | Logout] but found [Profile | Mynaukri]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:176)
 	at org.testng.Assert.assertEquals(Assert.java:186)
-	at example.NewTest.afterTest(NewTest.java:195)
+	at example.NewTest.afterTest(NewTest.java:226)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)

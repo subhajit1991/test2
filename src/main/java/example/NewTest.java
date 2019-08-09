@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -114,7 +115,7 @@ public class NewTest {
 		driver.findElement(By.xpath("//button[contains(text(), 'Login')]")).click();
 		//driver.findElement(By.partialLinkText("Login")).click();
 
-		driver.manage().timeouts().implicitlyWait(50L, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10L, TimeUnit.SECONDS);
 
 		try {
 			WebElement isPresent = driver.findElement(By.xpath("//button[contains(@type, 'button')] [@class='feedbackBtn waves-effect waves-light transparent']"));
@@ -130,24 +131,31 @@ public class NewTest {
 			}
 			if (bResult) {
 
-				try {
-					Thread.sleep(5000);
-				} catch (InterruptedException x) {
-					// TODO Auto-generated catch block
-				}
+//				try {
+//					Thread.sleep(5000);
+//				} catch (InterruptedException x) {
+//					// TODO Auto-generated catch block
+//				}
+//
+//				driver.manage().timeouts().implicitlyWait(50L, TimeUnit.SECONDS);
+//
+//				try {
+//					Thread.sleep(5000);
+//				} catch (InterruptedException ex) {
+//					// TODO Auto-generated catch block
+//				}
 
-				driver.manage().timeouts().implicitlyWait(50L, TimeUnit.SECONDS);
-
-				try {
-					Thread.sleep(5000);
-				} catch (InterruptedException ex) {
-					// TODO Auto-generated catch block
-				}
-				
 				driver.findElement(By.xpath("//div[@class='user-name roboto-bold-text'][contains(text(),'Subhajit Roy')]")).click();
 				
+				JavascriptExecutor jsx = (JavascriptExecutor)driver;
+				jsx.executeScript("window.scrollBy(0,500)", "");
+
 				WebElement ResumeHeadline = driver.findElement(By.xpath("//span[contains(@class,'widgetTitle')][contains(text(),'Resume Headline')]"));
-				ResumeHeadline.findElement(By.xpath("//span[contains(@class,'edit icon')]  [contains(text(),'Edit')]")).click();
+				WebElement EditResume = ResumeHeadline.findElement(By.xpath("//span[contains(@class,'edit icon')]  [contains(text(),'Edit')]"));
+				
+//				WebDriverWait wait = new WebDriverWait(driver, 50);
+//				wait.until(ExpectedConditions.invisibilityOf(EditResume));
+				EditResume.click();
 
 				WebElement Headline= driver.findElement(By.id("resumeHeadlineTxt"));
 				Headline.clear();
