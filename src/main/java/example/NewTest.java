@@ -22,10 +22,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.ClickAction;
-import org.openqa.selenium.interactions.HasInputDevices;
-import org.openqa.selenium.interactions.Mouse;
-import org.openqa.selenium.interactions.internal.Locatable;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -94,19 +91,8 @@ public class NewTest {
 	@Test
 
 	public void testEasy() throws InterruptedException, IOException {	
-		//String title = driver.getTitle();				 
-
-		// String username=temp.get(0);
 		driver.findElement(By.id("usernameField")).sendKeys(temp.get(0));
-		//WebElement username1= driver.findElement(By.id("usernameField"));
-		//username.sendKeys("neelback4more@gmail.com");
-		//WebElement password= driver.findElement(By.id("pwd1"));
-		//password.sendKeys("Subho1991*");
-		//String password=temp.get(1);
 		driver.findElement(By.id("passwordField")).sendKeys(temp.get(1));
-		// WebElement password= driver.findElement(By.id("passwordField"));
-		// password.sendKeys("Subho1991*");
-
 		driver.findElement(By.xpath("//button[contains(text(), 'Login')]")).click();
 		//driver.findElement(By.partialLinkText("Login")).click();
 
@@ -126,23 +112,16 @@ public class NewTest {
 			}
 			if (bResult) {
 
-//				try {
-//					Thread.sleep(5000);
-//				} catch (InterruptedException x) {
-//					// TODO Auto-generated catch block
-//				}
-//				driver.manage().timeouts().implicitlyWait(50L, TimeUnit.SECONDS);
-
 				driver.findElement(By.xpath("//div[@class='user-name roboto-bold-text'][contains(text(),'Subhajit Roy')]")).click();
-				
-//				JavascriptExecutor jsx = (JavascriptExecutor)driver;
-//				jsx.executeScript("window.scrollBy(0,250)", "");
+
+				//				JavascriptExecutor jsx = (JavascriptExecutor)driver;
+				//				jsx.executeScript("window.scrollBy(0,250)", "");
 
 				WebElement ResumeHeadline = driver.findElement(By.xpath("//span[contains(@class,'widgetTitle')][contains(text(),'Resume Headline')]"));
 				WebElement EditResume = ResumeHeadline.findElement(By.xpath("//span[contains(@class,'edit icon')]  [contains(text(),'Edit')]"));
-				
-//				WebDriverWait wait = new WebDriverWait(driver, 50);
-//				wait.until(ExpectedConditions.invisibilityOf(EditResume));
+
+				//				WebDriverWait wait = new WebDriverWait(driver, 50);
+				//				wait.until(ExpectedConditions.invisibilityOf(EditResume));
 				EditResume.click();
 
 				WebElement Headline= driver.findElement(By.id("resumeHeadlineTxt"));
@@ -156,24 +135,18 @@ public class NewTest {
 
 				//driver.get("https://www.skiutah.com/");
 				WebElement mynaukri = driver.findElement(By.xpath("//div[contains (@class,'mTxt') and text()='My Naukri']"));
-				Mouse mouse = ((HasInputDevices) driver).getMouse();
-				Locatable hoverItem = (Locatable) mynaukri;
-				mouse.mouseMove(hoverItem.getCoordinates());
+				Actions builder = new Actions(driver);
+				builder.moveToElement(mynaukri).build().perform();	
 				Thread.sleep(5000);
 				//WebElement beginner = driver.findElement(By.partialLinkText("Logout"));
 				WebDriverWait wait1=new WebDriverWait(driver, 50L);
 				WebElement wd=driver.findElement(By.partialLinkText("Logout"));
+
 				System.out.println("check");
+				wd.click();
 				//WebElement wd= wait1.until(ExpectedConditions.presenceOfElementLocated(By.partialLinkText("Logout")));
 				//WebElement wd= wait1.until(ExpectedConditions.presenceOfElementLocated(By.partialLinkText("Logout")));
 				System.out.println("check");
-				Locatable clickItem = (Locatable) wd;
-				System.out.println("check1");
-				mouse.mouseDown(clickItem.getCoordinates());
-				System.out.println("check2");
-				mouse.mouseUp(clickItem.getCoordinates());
-				System.out.println("check3");
-				//wd.click();
 				System.out.println(driver.getTitle());
 
 				//driver.close();
