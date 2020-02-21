@@ -45,6 +45,7 @@ public class NewTest {
 		//options.addArguments("--window-size=1366,768");
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-extensions");
+		options.addArguments("--disable-notifications");
 		options.addArguments("--dns-prefetch-disable");
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("credentials_enable_service", false);
@@ -106,7 +107,7 @@ public class NewTest {
 			}
 		}
 		catch (Exception e){
-			WebElement Homepage = driver.findElement(By.xpath("//a[contains (@href,'https://my.naukri.com/Profile/view?id=&orgn=homepage')]"));
+			WebElement Homepage = driver.findElement(By.xpath("//a[contains (@href,'mnjuser/profile?id=&orgn=homepage')]"));
 			if (Homepage.isDisplayed()){
 				bResult = true;
 			}
@@ -114,15 +115,20 @@ public class NewTest {
 
 				driver.findElement(By.xpath("//div[@class='user-name roboto-bold-text'][contains(text(),'Subhajit Roy')]")).click();
 
-				//				JavascriptExecutor jsx = (JavascriptExecutor)driver;
-				//				jsx.executeScript("window.scrollBy(0,250)", "");
+//								JavascriptExecutor jsx = (JavascriptExecutor)driver;
+//								jsx.executeScript("window.scrollBy(0,50)", "");
+				
+				Thread.sleep(5000);
 
 				WebElement ResumeHeadline = driver.findElement(By.xpath("//span[contains(@class,'widgetTitle')][contains(text(),'Resume Headline')]"));
 				WebElement EditResume = ResumeHeadline.findElement(By.xpath("//span[contains(@class,'edit icon')]  [contains(text(),'Edit')]"));
 
-				//				WebDriverWait wait = new WebDriverWait(driver, 50);
-				//				wait.until(ExpectedConditions.invisibilityOf(EditResume));
-				EditResume.click();
+//								WebDriverWait wait = new WebDriverWait(driver, 50);
+//								wait.until(ExpectedConditions.invisibilityOf(EditResume));
+				JavascriptExecutor executor = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",EditResume);
+				
+//				EditResume.click();
 
 				WebElement Headline= driver.findElement(By.id("resumeHeadlineTxt"));
 				Headline.clear();
@@ -182,7 +188,7 @@ public class NewTest {
 	public void afterTest() throws IOException, InterruptedException {
 		Thread.sleep(5000);
 		System.out.println(driver.getTitle());
-		String expectedTitle = "Naukri India | Logout";
+		String expectedTitle = "Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com";
 		String actualTitle = driver.getTitle();
 		Assert.assertEquals(actualTitle, expectedTitle);
 		driver.manage().deleteAllCookies();

@@ -8,7 +8,7 @@ import java.util.Properties;
 public class DataProvider {
 	
 	private Properties properties;
-	private final String propertyFilePath= "C:\\Users\\SR068695\\git\\test2\\Naukri.properties";
+	private final String propertyFilePath= "C:\\Users\\SR068695\\test2\\Naukri.properties";
 
 	
 	public DataProvider(){
