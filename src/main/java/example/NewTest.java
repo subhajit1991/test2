@@ -188,7 +188,7 @@ public class NewTest {
 	public void afterTest() throws IOException, InterruptedException {
 		Thread.sleep(5000);
 		System.out.println(driver.getTitle());
-		String expectedTitle = "Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com";
+		String expectedTitle = "Jobs - Recruitment - Job Search - Employment -Job Vacancies - Naukri.com";
 		String actualTitle = driver.getTitle();
 		Assert.assertEquals(actualTitle, expectedTitle);
 		driver.manage().deleteAllCookies();

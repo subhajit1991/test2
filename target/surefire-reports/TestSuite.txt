@@ -1,12 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 79.893 sec <<< FAILURE! - in TestSuite
-testEasy(example.NewTest)  Time elapsed: 39.041 sec  <<< FAILURE!
-java.lang.ClassCastException: org.openqa.selenium.remote.RemoteWebElement cannot be cast to org.openqa.selenium.interactions.internal.Locatable
-	at example.NewTest.testEasy(NewTest.java:160)
-
-afterTest(example.NewTest)  Time elapsed: 44.056 sec  <<< FAILURE!
-java.lang.AssertionError: expected [Naukri India | Logout] but found [Profile | Mynaukri]
-	at example.NewTest.afterTest(NewTest.java:214)
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 177.161 sec <<< FAILURE! - in TestSuite
+afterTest(example.NewTest)  Time elapsed: 153.782 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Jobs - Recruitment - Job Search - Employment -Job Vacancies - Naukri.com] but found []
+	at example.NewTest.afterTest(NewTest.java:193)
 
