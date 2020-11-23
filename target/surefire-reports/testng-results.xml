@@ -1,33 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="175878" started-at="2020-04-06T11:31:44Z" finished-at="2020-04-06T11:34:40Z">
+  <suite name="Suite" duration-ms="3542" started-at="2020-11-23T05:12:30Z" finished-at="2020-11-23T05:12:33Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="175878" started-at="2020-04-06T11:31:44Z" finished-at="2020-04-06T11:34:40Z">
+    <test name="Test" duration-ms="3542" started-at="2020-11-23T05:12:30Z" finished-at="2020-11-23T05:12:33Z">
       <class name="example.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@71be98f5]" name="beforeTest" is-config="true" duration-ms="22081" started-at="2020-04-06T17:01:44Z" finished-at="2020-04-06T17:02:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.NewTest@71be98f5]" name="testEasy" duration-ms="145829" started-at="2020-04-06T17:02:06Z" finished-at="2020-04-06T17:04:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEasy -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:example.NewTest@71be98f5]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-04-06T17:04:32Z" finished-at="2020-04-06T17:04:32Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="beforeTest()[pri:0, instance:example.NewTest@22f71333]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-11-23T10:42:30Z" finished-at="2020-11-23T10:42:30Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[expected [Jobs - Recruitment - Job Search - Employment -Job Vacancies - Naukri.com] but found []]]>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 85
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'W2026558', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_66'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0038D383+3134339]
+	Ordinal0 [0x0027A171+2007409]
+	Ordinal0 [0x0011AEE8+569064]
+	Ordinal0 [0x000A139F+70559]
+	Ordinal0 [0x0009CC63+52323]
+	Ordinal0 [0x000C0DFC+200188]
+	Ordinal0 [0x000C0C1D+199709]
+	Ordinal0 [0x000BEB0B+191243]
+	Ordinal0 [0x000A2E77+77431]
+	Ordinal0 [0x000A3E3E+81470]
+	Ordinal0 [0x000A3DC9+81353]
+	Ordinal0 [0x00290CD9+2100441]
+	GetHandleVerifier [0x004FB75A+1396954]
+	GetHandleVerifier [0x004FB3D9+1396057]
+	GetHandleVerifier [0x00507126+1444518]
+	GetHandleVerifier [0x004FBCE8+1398376]
+	Ordinal0 [0x00287F51+2064209]
+	Ordinal0 [0x002922EB+2106091]
+	Ordinal0 [0x00292411+2106385]
+	Ordinal0 [0x002A49C4+2181572]
+	BaseThreadInitThunk [0x758F6359+25]
+	RtlGetAppContainerNamedObjectPath [0x77847C24+228]
+	RtlGetAppContainerNamedObjectPath [0x77847BF4+180]
+	(No symbol) [0x00000000]
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Jobs - Recruitment - Job Search - Employment -Job Vacancies - Naukri.com] but found []
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at org.testng.Assert.assertEquals(Assert.java:186)
-	at example.NewTest.afterTest(NewTest.java:193)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 85
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'W2026558', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_66'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0038D383+3134339]
+	Ordinal0 [0x0027A171+2007409]
+	Ordinal0 [0x0011AEE8+569064]
+	Ordinal0 [0x000A139F+70559]
+	Ordinal0 [0x0009CC63+52323]
+	Ordinal0 [0x000C0DFC+200188]
+	Ordinal0 [0x000C0C1D+199709]
+	Ordinal0 [0x000BEB0B+191243]
+	Ordinal0 [0x000A2E77+77431]
+	Ordinal0 [0x000A3E3E+81470]
+	Ordinal0 [0x000A3DC9+81353]
+	Ordinal0 [0x00290CD9+2100441]
+	GetHandleVerifier [0x004FB75A+1396954]
+	GetHandleVerifier [0x004FB3D9+1396057]
+	GetHandleVerifier [0x00507126+1444518]
+	GetHandleVerifier [0x004FBCE8+1398376]
+	Ordinal0 [0x00287F51+2064209]
+	Ordinal0 [0x002922EB+2106091]
+	Ordinal0 [0x00292411+2106385]
+	Ordinal0 [0x002A49C4+2181572]
+	BaseThreadInitThunk [0x758F6359+25]
+	RtlGetAppContainerNamedObjectPath [0x77847C24+228]
+	RtlGetAppContainerNamedObjectPath [0x77847BF4+180]
+	(No symbol) [0x00000000]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+	at example.NewTest.beforeTest(NewTest.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -36,8 +107,8 @@
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.afterRun(TestRunner.java:1021)
-	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
+	at org.testng.TestRunner.run(TestRunner.java:609)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
@@ -55,7 +126,15 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="testEasy()[pri:0, instance:example.NewTest@22f71333]" name="testEasy" duration-ms="0" started-at="2020-11-23T10:42:33Z" finished-at="2020-11-23T10:42:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEasy -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:example.NewTest@22f71333]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-11-23T10:42:33Z" finished-at="2020-11-23T10:42:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

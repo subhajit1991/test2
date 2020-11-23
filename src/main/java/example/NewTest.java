@@ -4,6 +4,8 @@ import org.testng.annotations.Test;
 
 import excelLib.ExcelWrite;
 import excelLib.excelLib;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import io.github.bonigarcia.wdm.config.DriverManagerType;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
@@ -53,10 +55,10 @@ public class NewTest {
 		options.setExperimentalOption("prefs", prefs);
 		//options.addArguments("--disable-gpu");
 		options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-
+		WebDriverManager.chromedriver().setup();
 		DataProvider dp = new DataProvider();
-		System.out.println(dp);
-		System.setProperty("webdriver.chrome.driver",dp.getDriverPath());//"C:\\Users\\SR068695\\Downloads\\chromedriver.exe");//dp.getDriverPath());
+//		System.out.println(dp);
+//		System.setProperty("webdriver.chrome.driver",dp.getDriverPath());//"C:\\Users\\SR068695\\Downloads\\chromedriver.exe");//dp.getDriverPath());
 		//Log.info("DriverPath is found successfully");
 		driver = new ChromeDriver(options);
 		driver.manage().deleteAllCookies();
