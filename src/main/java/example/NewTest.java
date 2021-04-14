@@ -134,7 +134,7 @@ public class NewTest {
 
 				WebElement Headline= driver.findElement(By.id("resumeHeadlineTxt"));
 				Headline.clear();
-				Headline.sendKeys("MCA, Currently Automation Test Engineer");
+				Headline.sendKeys("MCA, Currently Senior Test Automation Engineer");
 
 				driver.findElement(By.xpath("//button[contains(@type,'submit')] [@class='waves-effect waves-light btn-large blue-btn'] [contains(text(),'Save')]")).click();
 

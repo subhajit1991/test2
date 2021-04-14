@@ -31,82 +31,14 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">3.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">38.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">example.NewTest</td><td><a href="#m1"><b>beforeTest</b>  </a></td><td class="numi">1</td><td>1606108350457</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr>
-<tr class="skippedodd"><td rowspan="1">example.NewTest</td><td><a href="#m2"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1606108353998</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Test &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="1">example.NewTest</td><td><a href="#m3"><b>testEasy</b>  </a></td><td class="numi">1</td><td>1606108353997</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">example.NewTest</td><td><a href="#m1"><b>testEasy</b>  </a></td><td class="numi">1</td><td>1618395769263</td><td class="numi">22729</td></tr>
 </table>
 <h1>Test</h1>
-<h2 id="m1">example.NewTest:beforeTest</h2>
-<div style="padding-left:3em">
-<p>session not created: This version of ChromeDriver only supports Chrome version 85
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;W2026558&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_66&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x0038D383+3134339]
-	Ordinal0 [0x0027A171+2007409]
-	Ordinal0 [0x0011AEE8+569064]
-	Ordinal0 [0x000A139F+70559]
-	Ordinal0 [0x0009CC63+52323]
-	Ordinal0 [0x000C0DFC+200188]
-	Ordinal0 [0x000C0C1D+199709]
-	Ordinal0 [0x000BEB0B+191243]
-	Ordinal0 [0x000A2E77+77431]
-	Ordinal0 [0x000A3E3E+81470]
-	Ordinal0 [0x000A3DC9+81353]
-	Ordinal0 [0x00290CD9+2100441]
-	GetHandleVerifier [0x004FB75A+1396954]
-	GetHandleVerifier [0x004FB3D9+1396057]
-	GetHandleVerifier [0x00507126+1444518]
-	GetHandleVerifier [0x004FBCE8+1398376]
-	Ordinal0 [0x00287F51+2064209]
-	Ordinal0 [0x002922EB+2106091]
-	Ordinal0 [0x00292411+2106385]
-	Ordinal0 [0x002A49C4+2181572]
-	BaseThreadInitThunk [0x758F6359+25]
-	RtlGetAppContainerNamedObjectPath [0x77847C24+228]
-	RtlGetAppContainerNamedObjectPath [0x77847BF4+180]
-	(No symbol) [0x00000000]
-</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-<br/>at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-<br/>at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-<br/>at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-<br/>at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-<br/>at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-<br/>at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-<br/>at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-<br/>at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-<br/>at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-<br/>at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-<br/>at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-<br/>at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-<br/>at example.NewTest.beforeTest(NewTest.java:61)
-<br/>26 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">example.NewTest:afterTest</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">example.NewTest:testEasy</h2>
+<h2 id="m1">example.NewTest:testEasy</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
